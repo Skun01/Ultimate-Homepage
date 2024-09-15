@@ -1,0 +1,96 @@
+body{
+   position: relative;
+   z-index: -1;
+}
+header{
+   background-image: url('../images/header-background.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   padding: 3.8rem 15%;
+   position: relative;
+   z-index: -2;
+}
+
+.title{
+   font-size: 30px;
+   color: white;
+}
+
+.about-me{
+   background-color: #061431;
+   display: flex;
+}
+
+.image-wrapper{
+   position: relative;
+   width: max(35%, 300px);
+   height: fit-content;
+   display: inline-block;
+   transform: translate(-30px, -30px);
+}
+
+.my-name{
+   font-size: 35px;
+   position: absolute;
+   bottom: 15px;
+   color: white;
+   text-align: center;
+   width: 100%;
+}
+
+.my-picture{
+   width: max(100%, 300px);
+   box-shadow: 0px 0px 2px 2px rgb(255, 255, 255, 0.4);
+}
+
+.about-me-information{
+   padding: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   width: 65%;
+}
+
+.about-me .title{
+   margin-bottom: 0.5rem;
+}
+
+.icon-nav{
+   align-self: flex-end;
+   display: flex;
+   gap: 20px;
+}
+
+
+.shadow-shine{
+   position: relative;
+   border-radius: 5px;
+}
+.shadow-shine::before, .shadow-shine::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   padding: 5px;
+   border-radius: 5px;
+   background-image: conic-gradient(yellow, red, orange);
+   z-index: -1;
+}
+
+.shadow-shine::before{
+   animation:  lighting 1.5s linear alternate infinite;
+}
+
+@keyframes lighting {
+   from{
+      filter: blur(0);
+   }
+   to{
+      filter: blur(16px);
+   }
+}
+

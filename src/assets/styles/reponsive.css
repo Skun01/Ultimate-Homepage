@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px){
+   .about-me{
+      flex-direction: column;
+   }
+   footer{
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+   }
+   .project-list{
+      display: flex;
+      flex-direction: column;
+      flex: content;
+      align-items: center;
+      gap: 20px;
+   }
+   .image-wrapper{
+      transform: none;
+   }
+
+   .about-me-information{
+      width: 100%;
+   }
+}

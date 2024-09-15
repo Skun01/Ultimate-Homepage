@@ -1,0 +1,90 @@
+main{
+   background-color: #002233;
+   padding: 0 5% 0.8rem 5%;
+   position: relative;
+   z-index: -1;
+}
+
+.project-list{
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 40px;
+}
+
+.project{
+   background-color: #162544;
+   color: white;
+   border-radius: 15px;
+   width: min(90vw, 350px);
+   min-height: 350px;
+}
+
+
+.project-img{
+   height: 200px;
+}
+
+.project-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+   transition: transform 0.2s;
+}
+
+.project-infor{
+   padding: 15px 10px 25px 10px;
+}
+
+.project-title{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 10px;
+   align-items: flex-end;
+}
+
+.project-nav{
+   display: flex;
+   gap: 15px;
+   align-items: center;
+}
+
+.project-name{
+   font-size: 20px;
+   position: relative;
+   transition: all 0.2s;
+}
+
+.project-desc{
+   
+}
+
+.card-shadow{
+   position: relative;
+   border-radius: 15px;
+}
+
+.card-shadow::before, .card-shadow::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   padding: 3px;
+   border-radius: 15px;
+   background-image: conic-gradient(#00B4D8, #023E8A, #0096C7);
+   z-index: -1;
+   transition: all 0.2s;
+}
+
+.card-shadow:hover::before{
+   filter: blur(16px);
+   opacity: 0.5;
+}
+
+.project:hover .project-img img{
+   transform: scale(0.95);
+}

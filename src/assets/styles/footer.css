@@ -1,0 +1,30 @@
+footer{
+   background-image: url('../images/footer.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   padding: 6rem 5% 3rem 5%;
+   color: white;
+}
+
+.contact-img{
+   width: max(30%, 300px);
+}
+
+.contact-section{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 60%;
+}
+
+footer .icon-nav{
+   align-self: center;
+   font-size: 30px;
+}
+
+.phone, .email{
+   display: flex;
+   gap: 10px;
+   margin-bottom: 15px;
+}
